@@ -80,10 +80,6 @@ app.get("/posts/:postId", function(req, res){
   })
 });
 
-PORT = process.env.PORT;
-if(PORT == null || PORT == "") {
-  PORT = 3000; // DEV PORT
-}
-app.listen(3000, function() {
+app.listen(process.env.PORT, function() {
   console.log("Server started on port: " + PORT);
 });
