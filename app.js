@@ -80,6 +80,4 @@ app.get("/posts/:postId", function(req, res){
   })
 });
 
-app.listen(process.env.PORT, function() {
-  console.log("Server started on port: " + PORT);
-});
+app.listen(process.env.PORT);
